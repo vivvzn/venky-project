@@ -1,0 +1,3 @@
+In Folder0, there is an `index.html` file. 
+
+Please display the images according to the filenames listed in `index.html`.
