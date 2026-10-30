@@ -1,0 +1,126 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+}
+
+.sheet {
+  width: 1148px;
+  padding: 50px 62px 30px;
+}
+
+/* ---------- heading ---------- */
+.college { text-align: center; }
+.crest {
+  width: 70px; height: 70px;
+  margin: 0 auto 28px;
+  border-radius: 50%;
+  border: 2px solid #444;
+  background:
+    radial-gradient(circle at 50% 45%, #444 0 14px, transparent 15px),
+    #fff;
+}
+.college h1 { margin: 0; font-size: 13px; line-height: 1.2; }
+.college h2 { margin: 0; font-size: 13px; line-height: 1.2; }
+.college h3 { margin: 0; font-size: 11px; line-height: 1.3; }
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 2px 0 4px;
+  padding: 0 31px 0 31px;
+}
+
+/* ---------- time table ---------- */
+table.tt {
+  width: 1023px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 11.5px;
+  line-height: 1.25;
+  text-align: center;
+}
+.tt col.c-day   { width: 77px; }
+.tt col.c-p     { width: 98px; }
+.tt col.c-lunch { width: 58px; }
+
+.tt th, .tt td {
+  border: 1px solid #333;
+  padding: 1px 2px;
+  vertical-align: middle;
+  height: 45px;
+}
+
+.tt tr.head th { font-weight: bold; height: 52px; vertical-align: top; }
+
+.tt th.day { font-size: 9.5px; font-weight: bold; text-align: center; }
+
+.tt th.lunch {
+  font-size: 11px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.tt td.lunch-rest { border-top: 1px solid #333; }
+
+.tt .green { background: #a9d18e; }
+.tt .blue  { background: #9dc3e6; }
+.tt .blank { background: #fff; }
+.tt .thin  { height: 34px; }
+.tt .short { height: 34px; }
+
+.tt tr.sat th, .tt tr.sat td { height: 16px; }
+
+/* arrows used in the merged cells */
+.arrow {
+  display: inline-flex;
+  align-items: center;
+  width: 92%;
+  height: 8px;
+  vertical-align: middle;
+  color: #548235;
+}
+.arrow i { flex: 1; height: 1.5px; background: currentColor; }
+.arrow::before, .arrow::after {
+  content: "";
+  border-top: 3.5px solid transparent;
+  border-bottom: 3.5px solid transparent;
+}
+.arrow::before { border-right: 7px solid currentColor; }
+.arrow::after  { border-left: 7px solid currentColor; }
+.arrow.blue-line { color: #2f5fc4; width: 98%; }
+.arrow.dark-line { color: #111; width: 82%; }
+
+/* ---------- papers / teachers ---------- */
+table.papers {
+  width: 848px;
+  margin: 28px 0 0 31px;
+  border-collapse: collapse;
+  font-size: 10.5px;
+  table-layout: fixed;
+  text-align: left;
+}
+.papers th, .papers td {
+  border: 1px solid #333;
+  padding: 1px 4px;
+  line-height: 1.15;
+}
+.papers th { font-size: 12px; padding: 3px 4px; }
+.papers tbody td { height: 15px; }
+.papers td.big { font-size: 12px; font-weight: bold; }
+.papers th:nth-child(1) { width: 223px; }
+.papers th:nth-child(2) { width: 168px; }
+.papers th:nth-child(3) { width: 277px; }
+.papers th:nth-child(4) { width: 180px; }
+
+.sign {
+  margin: 20px 0 0;
+  text-align: right;
+  padding-right: 62px;
+  font-weight: bold;
+  font-size: 14px;
+}
