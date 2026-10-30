@@ -1,0 +1,32 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+
+/* TODO 1: all paragraphs are red */
+p {
+  color: red;
+}
+
+/* TODO 2: every element with class "note" gets 20px text */
+.note {
+  font-size: 20px;
+}
+
+/* TODO 3: the element with id "id-selector-demo" is green */
+#id-selector-demo {
+  color: green;
+}
+
+/* TODO 4: li elements whose value attribute is "4" are blue */
+li[value="4"] {
+  color: blue;
+}
+
+/* TODO 5: universal selector - centre everything */
+* {
+  text-align: center;
+}
